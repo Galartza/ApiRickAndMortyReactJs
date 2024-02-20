@@ -10,6 +10,14 @@ export const Nav = styled.nav `
         height: 4rem;
         padding: 0 2rem;
         background-color: #233d4d;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    }
+    & .logo {
+        font-size: 2rem;
+        color: #a6cccc;
+        -webkit-text-stroke: .5px #88e23b;
     }
     &  .nav-item {
         display: flex;
@@ -18,5 +26,11 @@ export const Nav = styled.nav `
     }
     & .nav-link a {
         text-decoration: none;
+        color: #a6cccc;
+        font-size: 1.5rem;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    & .nav-link a:hover {
+        color: #88e23b;
     }
 `;
