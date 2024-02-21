@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const FooterAbputMe = styled.footer`
-    .about {
+export const FooterAboutMe = styled.footer`
         position: relative;
         bottom: 0;
         height: 5rem;
@@ -9,7 +8,6 @@ export const FooterAbputMe = styled.footer`
         background-color: #233d4d;
         text-align: center;
  
-    }
     & .text-foot{    
         color: #a6cccc;
         font-size:20px;

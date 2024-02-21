@@ -138,7 +138,8 @@ export const HomeContainerUno = styled.div`
            align-self: center;
            background-color: black;
            @media only screen and (max-width: 680px) {
-            height: 40rem;
+            height: 30rem;
+            padding: 2rem;
             flex-direction: column;
       }
        
