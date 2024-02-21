@@ -219,7 +219,7 @@ export const TextHome = styled.p`
         width: 50%;
         text-align: center;
         @media only screen and (max-width: 480px) {
-           font-size: .9rem;
+           font-size: 1.2rem;
            width: 100%;
       }
 `
