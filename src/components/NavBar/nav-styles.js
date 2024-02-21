@@ -1,8 +1,16 @@
 import styled from 'styled-components'
 
+export const ImagenLogoContainer = styled.div`
+    height: 4rem;
+`;
+
+export const ImgLogo = styled.img`
+    height: 4rem;
+`;
 
 export const Nav = styled.nav `
     .navbar {
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;

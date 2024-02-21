@@ -1,36 +1,8 @@
+// En home-styles.js
 import styled from "styled-components";
 
 export const HomeSection = styled.section`
-    .home {
-        height: 30rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    & .text-home {
-        font-size: 1.2rem;
-        color: #a6cccc;
-        font-family: "Barlow Condensed", sans-serif;
-        padding: 1rem;
-        width: 50%;
-        text-align: center;
-    }
-    & .search-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-        &    .group {
-        display: flex;
-        line-height: 28px;
-        align-items: center;
-        position: relative;
-        max-width: 190px;
-        }
-
+height: 60rem;
         & .input {
         width: 100%;
         height: 40px;
@@ -153,6 +125,69 @@ export const HomeSection = styled.section`
             & .shape {
             fill: #0E1822;
             }
+`
+export const HomeContainerUno = styled.div`
+           height: 30rem;
+           width: 100%;
+           display: flex;
+           justify-content: space-around;
+           align-self: center;
+           background-color: black;
+       
+`
+export const ContainerIzq = styled.div `
+            height: 30rem;
+             width: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+`
+export const ContainerDer = styled.div `
+            height: 30rem;
+             width: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+`
+export const ImgIzq = styled.img`
+             height: 25rem;
+             max-width: 1200px;
+             width: 100%;
+             
 
+`
+export const ImgDer = styled.img`
+            height: 25rem;
+        
+            width: 20rem;
 
+`
+export const HomeContainerDos = styled.div`
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+`
+export const SearchContainer = styled.div`
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+`
+export const Group = styled.div`
+          display: flex;
+        line-height: 28px;
+        align-items: center;
+        position: relative;
+        max-width: 190px;
+`
+export const TextHome = styled.p`
+            font-size: 1.2rem;
+        color: #a6cccc;
+        font-family: "Barlow Condensed", sans-serif;
+        padding: 1rem;
+        width: 50%;
+        text-align: center;
 `

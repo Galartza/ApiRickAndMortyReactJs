@@ -1,11 +1,12 @@
 import React from 'react'
-import { FooterAbputMe } from './aboutme-styles'; 
+import { FooterAbputMe } from './footer-styles';
+
 
 export const AboutMe = () => {
   return (
     <FooterAbputMe>
             <footer className='about' id='about'>
-                 <h1>aboutme</h1>
+                 <h1 className='text-foot'>aboutme</h1>
              </footer>
     </FooterAbputMe>
 
