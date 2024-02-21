@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
 import { FooterAboutMe } from './footer-styles';
+import SocialIcons from '../SocialIcons/SocialIcons'; // Ajusta la ruta según la ubicación real
 
+const Footer = () => (
+  <FooterAboutMe className='about' id='about'>
+    <div className="linea-footer"></div>
+    <ul>
+      <li className="text-foot">Web diseñada por Joaquin Galarza &#128512;</li>
+      <li className="text-foot"> Mis redes:</li>
+      <SocialIcons />
+      <div className="linea-footer"></div>
+    </ul>
+  </FooterAboutMe>
+);
 
-export const AboutMe = () => {
-  return (
-    <>
-     <FooterAboutMe className='about' id='about'>
-                 <h1 className='text-foot'>about me</h1>
-    </FooterAboutMe>
-    </>
-
-
-  )
-}
-
-
-export default AboutMe;
+export default Footer;

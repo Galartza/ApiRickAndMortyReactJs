@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const HomeSection = styled.section`
         height: 55rem;
         @media only screen and (max-width: 680px) {
-        height: 75rem;
+        height: 60rem;
       }
 
         & .input {
@@ -170,6 +170,8 @@ export const ImgIzq = styled.img`
              height: 25rem;
              max-width: 1200px;
              width: 100%;
+             filter: drop-shadow(5px 5px 5px  rgba(136, 226, 59, 0.65) );
+             z-index: 0;
                  @media only screen and (max-width: 680px) {
                 height: 15rem;
                 flex-direction: column;
@@ -180,6 +182,8 @@ export const ImgIzq = styled.img`
 export const ImgDer = styled.img`
             height: 25rem;
             width: 25rem;
+            filter: drop-shadow(5px 5px 5px  rgba(136, 226, 59, 0.65) );
+            z-index: 0;
                 @media only screen and (max-width: 680px) {
             height: 20rem;
             width: 20rem;
@@ -195,7 +199,7 @@ export const HomeContainerDos = styled.div`
         align-items: center;
         gap: 1rem;
         @media only screen and (max-width: 680px) {
-            height: 30rem;
+            height: 25rem;
             flex-direction: column;
       }
 `
