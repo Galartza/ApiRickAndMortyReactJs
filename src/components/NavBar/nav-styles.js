@@ -28,6 +28,7 @@ export const Nav = styled.nav `
 
     @media only screen and (max-width: 768px) {
     .nav-item {
+        display: none;
         flex-direction: column;
         gap: 0.5rem;
         width: 10rem;
