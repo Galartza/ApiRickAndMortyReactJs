@@ -1,31 +1,34 @@
 // En NavBar.jsx
-import React from 'react';
-import {Nav, ImagenLogoContainer, ImgLogo } from '../NavBar/nav-styles'; // Eliminar el espacio en blanco al final
-import Logo from "../../assets/Rick-and-Morty-Logo.png";
+
+import React, { useState } from 'react';
+import { Nav } from '../NavBar/nav-styles'; // Eliminar el espacio en blanco al final
 import { Outlet, Link } from 'react-router-dom';
 
 export const NavBar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <Nav>
-            <nav className='navbar'>
-                <ImagenLogoContainer>
-                    <ImgLogo src={Logo} alt="Rick & Morty Logo" />
-                </ImagenLogoContainer>
-                <ul className="nav-item">
+            <nav className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}>
+                <h1 className="logo">Rick and Morty Api</h1>
+                <div className="menu-icon" onClick={toggleMenu}>&#9776;</div>
+                <ul className={`nav-item ${isMenuOpen ? 'active' : ''}`}>
                     <li className="nav-link">
-                        <Link to="/">Home</Link>
+                        <Link to="/" onClick={toggleMenu}>Home</Link>
                     </li>
                     <li className="nav-link">
-                        <Link to="/characters">Characters</Link>
+                        <Link to="/characters" onClick={toggleMenu}>Characters</Link>
                     </li>
                     <li className="nav-link">
-                        <a href='#about'>About Me</a>
+                        <a href='#about' onClick={toggleMenu}>About Me</a>
                     </li>
                 </ul>
             </nav>
             <Outlet />
         </Nav>
     )
-}
-
-export default NavBar;
+};

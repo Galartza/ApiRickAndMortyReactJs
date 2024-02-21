@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ImageL from "../../assets/Rick-and-Morty-Logo.png"
-import ImagePortal from "../../assets/portalfinal.png"
+import ImagePortal from "../../assets/portal.png"
 import { HomeSection, HomeContainerUno, HomeContainerDos,ContainerIzq, ImgIzq, ImgDer, ContainerDer,  SearchContainer, Group, TextHome } from '../Home/home-styles';
 
 

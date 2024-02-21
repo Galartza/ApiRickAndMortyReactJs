@@ -2,7 +2,11 @@
 import styled from "styled-components";
 
 export const HomeSection = styled.section`
-height: 60rem;
+        height: 55rem;
+        @media only screen and (max-width: 680px) {
+        height: 75rem;
+      }
+
         & .input {
         width: 100%;
         height: 40px;
@@ -133,6 +137,10 @@ export const HomeContainerUno = styled.div`
            justify-content: space-around;
            align-self: center;
            background-color: black;
+           @media only screen and (max-width: 680px) {
+            height: 40rem;
+            flex-direction: column;
+      }
        
 `
 export const ContainerIzq = styled.div `
@@ -141,6 +149,10 @@ export const ContainerIzq = styled.div `
              display: flex;
              align-items: center;
              justify-content: center;
+                 @media only screen and (max-width: 680px) {
+            height: 10rem;
+            flex-direction: column;
+      }
 `
 export const ContainerDer = styled.div `
             height: 30rem;
@@ -148,27 +160,43 @@ export const ContainerDer = styled.div `
              display: flex;
              align-items: center;
              justify-content: center;
+                 @media only screen and (max-width: 680px) {
+            height: 10rem;
+            flex-direction: column;
+      }
 `
 export const ImgIzq = styled.img`
              height: 25rem;
              max-width: 1200px;
              width: 100%;
+                 @media only screen and (max-width: 680px) {
+                height: 15rem;
+                flex-direction: column;
+      }
              
 
 `
 export const ImgDer = styled.img`
             height: 25rem;
-        
+            width: 25rem;
+                @media only screen and (max-width: 680px) {
+            height: 20rem;
             width: 20rem;
+            flex-direction: column;
+      }
 
 `
 export const HomeContainerDos = styled.div`
-        height: 30rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        @media only screen and (max-width: 680px) {
+            height: 30rem;
+            flex-direction: column;
+      }
 `
 export const SearchContainer = styled.div`
         display: flex;
@@ -190,4 +218,8 @@ export const TextHome = styled.p`
         padding: 1rem;
         width: 50%;
         text-align: center;
+        @media only screen and (max-width: 480px) {
+           font-size: .9rem;
+           width: 100%;
+      }
 `
