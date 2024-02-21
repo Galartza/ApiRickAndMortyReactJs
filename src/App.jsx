@@ -1,9 +1,9 @@
-import './App.css'
+import '../src/App.css'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar/NavBar'
-import Home from './components/Home/Home'
-import Characters from './components/Characters/Characters'
-import AboutMe from './components/Footer/Footer'
+import { NavBar } from '../src/components/NavBar/NavBar.jsx';
+import Home from '../src/components/Home/Home.jsx'
+import Characters from "../src/components/Characters/Characters.jsx"
+import AboutMe from '../src/components/Footer/Footer.jsx'
 
 
 function App() {
@@ -22,4 +22,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

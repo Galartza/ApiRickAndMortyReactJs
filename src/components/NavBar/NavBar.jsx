@@ -1,8 +1,8 @@
 // En NavBar.jsx
 
-import React, { useState } from 'react';
-import { Nav } from '../NavBar/nav-styles'; // Eliminar el espacio en blanco al final
-import { Outlet, Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Nav } from '../NavBar/nav-styles'
+import { Outlet, Link } from 'react-router-dom'
 
 export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
