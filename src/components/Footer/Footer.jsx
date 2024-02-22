@@ -1,6 +1,6 @@
 import React from 'react';
 import { FooterAboutMe } from './footer-styles';
-import SocialIcons from '../SocialIcons/SocialIcons'; // Ajusta la ruta según la ubicación real
+import SocialIcons from '../SocialIcons/SocialIcons'; 
 
 const Footer = () => (
   <FooterAboutMe className='about' id='about'>

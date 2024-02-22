@@ -1,15 +1,30 @@
 import styled from "styled-components";
 
 export const CharacterSection = styled.section`
+    height: 100rem;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
     .character {
-        height: 30rem;
-        display: flex;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
         justify-content: center;
-        align-items: center;
+        gap: 2rem;
     }
+
+    .search-container {
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     & .primary-button {
             font-family: 'Ropa Sans', sans-serif;
-                /* font-family: 'Valorant', sans-serif; */
             color: white;
             cursor: pointer;
             font-size: 13px;
@@ -24,7 +39,7 @@ export const CharacterSection = styled.section`
             transition: 0.3s ease-in-out;
             transition-property: background-position, border, color;
             position: relative;
-            z-index: 1;
+            z-index: 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -102,4 +117,36 @@ export const CharacterSection = styled.section`
             fill: #0E1822;
             }
 
-`
+
+/* Agregar media queries para hacerlo responsivo */
+@media screen and (max-width: 1200px) {
+        .character {
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .character {
+            grid-template-columns: repeat(2, minmax(150px, 1fr));
+        }
+    }
+
+    @media screen and (max-width: 680px) {
+        .character {
+            grid-template-columns: 1fr;
+        }
+    }
+`;
+
+export const ContainerCharacter = styled.div`
+    height: 80rem;
+    flex-direction: column;
+`;
+
+export const ContainerButtonRefresh = styled.div`
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
