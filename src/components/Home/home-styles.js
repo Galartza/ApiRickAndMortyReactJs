@@ -2,9 +2,9 @@
 import styled from "styled-components";
 
 export const HomeSection = styled.section`
-        height: 55rem;
+        height: 75rem;
         @media only screen and (max-width: 680px) {
-        height: 60rem;
+        height: 90rem;
       }
 
         & .input {
@@ -14,7 +14,6 @@ export const HomeSection = styled.section`
         padding: 0 1rem;
         padding-left: 2.5rem;
         border: 2px solid transparent;
-       
         outline: none;
         background-color: #f3f3f4;
         color: #0d0c22;
@@ -173,7 +172,7 @@ export const HomeContainerUno = styled.div`
            align-self: center;
            background-color: black;
            @media only screen and (max-width: 680px) {
-            height: 30rem;
+            height: 50rem;
             padding: 2rem;
             flex-direction: column;
       }
@@ -227,16 +226,46 @@ export const ImgDer = styled.img`
 
 `
 export const HomeContainerDos = styled.div`
-        height: 20rem;
+        height: 40rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         gap: 1rem;
+        padding: 3rem;
         @media only screen and (max-width: 680px) {
-            height: 25rem;
+            height: 40rem;
             flex-direction: column;
       }
+
+      .character-card {
+    background-color: #0E1822;
+    border: 1px solid #88e23b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(136, 226, 59, 0.65);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    p {
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+      font-size: 16px;
+      color: #a6cccc;
+    }
+}
 `
 export const SearchContainer = styled.div`
         display: flex;
@@ -250,13 +279,14 @@ export const Group = styled.div`
         align-items: center;
         position: relative;
         max-width: 190px;
+        margin-top: 3rem;
 `
 export const TextHome = styled.p`
             font-size: 1.2rem;
         color: #a6cccc;
         font-family: "Barlow Condensed", sans-serif;
         padding: 1rem;
-        width: 50%;
+        width: 100%;
         text-align: center;
         @media only screen and (max-width: 480px) {
            font-size: 1.2rem;

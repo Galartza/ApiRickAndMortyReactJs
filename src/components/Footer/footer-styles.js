@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const FooterAboutMe = styled.footer`
   position: relative;
   bottom: 0;
-  height: 6rem;
+  height: 8rem;
   width: 100%;
   background-color: #000;
   text-align: center;
+  padding: 1rem 0;
  
   & .text-foot {    
     display: flex;
