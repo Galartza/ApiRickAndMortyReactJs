@@ -1,20 +1,57 @@
 import styled from "styled-components";
 
 export const CharacterSection = styled.section`
+@media screen and (max-width: 1042px) {
+    height: 150rem;
+}
+
+@media screen and (max-width: 712px) {
+    height: 250rem;
+}
     height: 100rem;
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    padding: 2rem;
+
 
     .character {
+        max-width: 1200px;
         width: 100%;
+        margin: 10rem auto 0;
         display: grid;
-        grid-template-columns: repeat(3, minmax(250px, 1fr));
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
     }
+    .character-card {
+    background-color: #0E1822;
+    border: 1px solid #88e23b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(136, 226, 59, 0.65);
+    padding: 16px;
+    margin: 8px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    p {
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+      font-size: 16px;
+      color: #a6cccc;
+    }
+  }
 
     .search-container {
         height: 40rem;
@@ -118,30 +155,11 @@ export const CharacterSection = styled.section`
             }
 
 
-/* Agregar media queries para hacerlo responsivo */
-@media screen and (max-width: 1200px) {
-        .character {
-            grid-template-columns: repeat(3, minmax(200px, 1fr));
-        }
-    }
 
-    @media screen and (max-width: 768px) {
-        .character {
-            grid-template-columns: repeat(2, minmax(150px, 1fr));
-        }
-    }
 
-    @media screen and (max-width: 680px) {
-        .character {
-            grid-template-columns: 1fr;
-        }
-    }
+
 `;
 
-export const ContainerCharacter = styled.div`
-    height: 80rem;
-    flex-direction: column;
-`;
 
 export const ContainerButtonRefresh = styled.div`
     height: 10rem;
