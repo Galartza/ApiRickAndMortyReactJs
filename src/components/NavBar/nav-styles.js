@@ -12,7 +12,7 @@ export const Nav = styled.nav `
         width: 100%;
         height: 4rem;
         padding: 0 2rem;
-        background-color: #233d4d;
+        background-color: #0e0e52;
         -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
@@ -22,7 +22,7 @@ export const Nav = styled.nav `
         display: none;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #a6cccc;
+        color: #f8f9fa;
     }
 
 
@@ -38,7 +38,7 @@ export const Nav = styled.nav `
         position: absolute;
         top: 4rem; /* Ajusta la posición vertical según tus necesidades */
         right: 0; /* Coloca el menú en la esquina superior derecha */
-        background-color: #233d4d;
+        background-color: #0e0e52;
     }
 
     .menu-icon {
@@ -46,7 +46,7 @@ export const Nav = styled.nav `
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #a6cccc;
+        color: #f8f9fa;
     }
 
     .nav-item.active {
@@ -67,7 +67,7 @@ export const Nav = styled.nav `
     .logo {
         font-size: 1.5rem;
         color: #a6cccc;
-        -webkit-text-stroke: 0.5px #88e23b;
+        -webkit-text-stroke: 0.5px #70e000;
     }
 
     .nav-item {
@@ -78,12 +78,12 @@ export const Nav = styled.nav `
 
     .nav-link a {
         text-decoration: none;
-        color: #a6cccc;
+        color: #f8f9fa;
         font-size: 1.5rem;
         font-family: "Barlow Condensed", sans-serif;
     }
 
     .nav-link a:hover {
-        color: #88e23b;
+        color: #70e000;
     }
 `;

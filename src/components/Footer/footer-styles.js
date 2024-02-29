@@ -13,7 +13,7 @@ export const FooterAboutMe = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #a6cccc;
+    color: #f8f9fa;
     font-size: 20px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
@@ -35,6 +35,6 @@ export const SocialIconsContainer = styled.div`
   }
 
   & a:hover {
-    color: #88e23b; 
+    color: #70e000; 
   }
 `;

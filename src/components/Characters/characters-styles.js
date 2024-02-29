@@ -26,9 +26,9 @@ export const CharacterSection = styled.section`
     }
     .character-card {
     background-color: #0E1822;
-    border: 1px solid #88e23b;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(136, 226, 59, 0.65);
+    border-radius: 2px;
+    box-shadow:  -2px -2px 6px #0e0e52,
+             2px 2px 6px #0e0e52;
     padding: 16px;
     margin: 8px;
     text-align: center;
@@ -41,7 +41,7 @@ export const CharacterSection = styled.section`
     img {
       max-width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: 2px;
       margin-bottom: 8px;
     }
 
@@ -49,7 +49,7 @@ export const CharacterSection = styled.section`
     text-transform: uppercase;
     font-family: "Barlow Condensed", sans-serif;
       font-size: 16px;
-      color: #a6cccc;
+      color: #f8f9fa;
     }
   }
 
@@ -67,9 +67,9 @@ export const CharacterSection = styled.section`
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 0.05rem;
-            border: 1px solid #0E1822;
+            border: 1px solid #090909;
             padding: 0.8rem 2.1rem;
-            background-color: #0E1822;
+            background-color: #090909;
             background-size: 200%;
             background-position: 200%;
             background-repeat: no-repeat;
@@ -84,7 +84,7 @@ export const CharacterSection = styled.section`
             }
 
             & .primary-button:hover {
-            border: 1px solid #88e23b;
+            border: 1px solid #70e000;
             color: white;
             background-position: 40%;
             }
@@ -111,7 +111,7 @@ export const CharacterSection = styled.section`
             & .primary-button:after {
             content: "";
             position: absolute;
-            background-color: #88e23b;
+            background-color: #70e000;
             width: 0.3rem;
             height: 0.3rem;
             bottom: -1px;
